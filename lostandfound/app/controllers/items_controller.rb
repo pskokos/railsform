@@ -13,7 +13,7 @@ class ItemsController < ApplicationController
   end
 
   def search
-  @items = Item.search params[:search]
+    @items = Item.search params[:search]
   end
 
   # GET /items/new

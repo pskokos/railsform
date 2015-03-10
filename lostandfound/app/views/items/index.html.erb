@@ -24,13 +24,13 @@
       </tr>
     <% end %>
   </tbody>
-  <div>
-  <%= form_tag("/search", method: "get") do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
+    <div>
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:items, "Search for:") %>
+  <%= text_field_tag(:items) %>
   <%= submit_tag("Search") %>
-</div>
 <% end %>
+</div>
 </table>
 
 <br>

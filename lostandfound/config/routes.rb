@@ -27,11 +27,13 @@ Rails.application.routes.draw do
   #       get 'sold'
   #     end
   #   end
-  resource :users do
-      collection do
-      get 'search'
-    end
-  end
+
+  get 'search', to: 'items#search'
+  #resource :items do
+   #   collection do
+    #  match 'search', to: 'items#search', via: :get
+    #end
+  #end
   # Example resource route with sub-resources:
   #   resources :products do
   #     resources :comments, :sales
