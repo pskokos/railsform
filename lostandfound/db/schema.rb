@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20150309004221) do
     t.string   "title"
     t.text     "description"
     t.string   "type"
+    t.text     "owner"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

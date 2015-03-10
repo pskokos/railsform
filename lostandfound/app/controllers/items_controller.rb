@@ -12,15 +12,15 @@ class ItemsController < ApplicationController
   def show
   end
 
+  def search
+  @items = Item.search params[:search]
+  end
+
   # GET /items/new
   def new
     @item = Item.new
   end
 
- def search
-    puts "you've searched for something"
-  end
-  
   # GET /items/1/edit
   def edit
   end
