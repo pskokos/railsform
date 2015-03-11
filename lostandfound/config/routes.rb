@@ -28,7 +28,8 @@ Rails.application.routes.draw do
   #     end
   #   end
 
-  get 'search', to: 'items#search'
+  match 'search', to: 'items#search', via: :get
+
   #resource :items do
    #   collection do
     #  match 'search', to: 'items#search', via: :get
