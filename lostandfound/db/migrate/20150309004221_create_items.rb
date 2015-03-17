@@ -4,9 +4,9 @@ class CreateItems < ActiveRecord::Migration
       t.string :title
       t.text :description
       t.string :type
-      t.string :title 
       t.text 	:owner
       t.timestamps null: false
+      t.integer :type_id
     
     end 
   end

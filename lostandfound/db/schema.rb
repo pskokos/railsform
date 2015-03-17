@@ -20,6 +20,16 @@ ActiveRecord::Schema.define(version: 20150309004221) do
     t.text     "owner"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.integer  "type_id"
+  end
+
+  create_table "items", force: true do |t|
+    t.string   "title"
+    t.string   "description"
+    t.text     "owner"
+    t.integer  "category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
